@@ -1,0 +1,85 @@
+.olympiad-section {
+  padding: 2rem 11rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.olympiad-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.blue {
+  color: #0456a6;
+}
+
+.orange {
+  color: #f16522;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 60px;
+  justify-items: center;
+}
+
+.class-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.class-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.class-card ul {
+  padding-left: 15px;
+  list-style: none;
+}
+
+.class-card ul li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.more {
+  color: red;
+  font-weight: 600;
+}
+
+.class-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 2px solid #f16522;
+  color: #f16522;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.1;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.class-badge small {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+}

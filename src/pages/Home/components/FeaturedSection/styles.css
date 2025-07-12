@@ -1,0 +1,45 @@
+.feature-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem 8rem;
+  margin-top: -5rem;
+  z-index: 111;
+  position: relative;
+}
+
+.feature-card {
+  flex: 1 1 250px;
+  max-width: 25%;
+  min-width: 250px;
+  padding: 36px 20px;
+  color: #fff;
+}
+
+.feature-card .icon {
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.feature-card p,
+.feature-card ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.feature-card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.feature-card ul li {
+  margin-bottom: 6px;
+}

@@ -1,0 +1,78 @@
+.detail-section {
+  display: flex;
+  gap: 40px;
+  padding: 3rem 8rem;
+  background-color: #f3fdfd;
+  flex-wrap: wrap;
+}
+
+.detail-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.detail-badge {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.detail-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #2d3e50;
+  margin: 10px 0 20px 0;
+}
+
+.detail-left p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.detail-button {
+  margin-top: 20px;
+  background-color: #5fb6b2;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.detail-button:hover {
+  background-color: #419895;
+}
+
+.detail-right {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
