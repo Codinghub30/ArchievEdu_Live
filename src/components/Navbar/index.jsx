@@ -1,28 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+import Logo from "../../assets/logo.png";
 import "./styles.css";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-container">
         {/* Logo Section */}
         <div className="navbar-logo">
-          <img src="/logo.png" alt="Logo" />
-          <div className="navbar-title">
-            <span>Vijaya Group</span>
-            <br />
-            <span>Of Institutions</span>
-          </div>
+          <img src={Logo} alt="Logo" />
+        </div>
+
+        {/* Hamburger for Mobile */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className="bar" />
+          <div className="bar" />
+          <div className="bar" />
         </div>
 
         {/* Menu Links */}
-        <nav className="navbar-links">
-          <div className="nav-item">ABOUT US ▾</div>
-          <div className="nav-item">ADMISSIONS ▾</div>
-          <div className="nav-item">ACADEMICS ▾</div>
-          <div className="nav-item">STUDENT LIFE ▾</div>
-          <div className="nav-item">COMMUNITY ▾</div>
-          <div className="nav-item">OUR SERVICES ▾</div>
+        <nav className={`navbar-links ${menuOpen ? "open" : ""}`}>
+          <a className="nav-item" href="/" onClick={closeMenu}>
+            Home
+          </a>
+          <a className="nav-item" href="/about-us" onClick={closeMenu}>
+            About Us
+          </a>
+          <a className="nav-item" href="/gallery" onClick={closeMenu}>
+            Gallery
+          </a>
+          <a className="nav-item" href="/contact-us" onClick={closeMenu}>
+            Contact
+          </a>
+          <a className="nav-item" href="/winners" onClick={closeMenu}>
+            Winners
+          </a>
         </nav>
       </div>
     </header>

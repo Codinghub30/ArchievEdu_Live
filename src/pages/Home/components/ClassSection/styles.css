@@ -1,9 +1,16 @@
 .olympiad-section {
-  padding: 2rem 11rem;
+  padding: 2rem 4rem;
   text-align: center;
   background-color: #fff;
 }
 
+@media (max-width: 768px) {
+  .olympiad-section {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Title styling */
 .olympiad-section h2 {
   font-size: 32px;
   margin-bottom: 10px;
@@ -17,6 +24,7 @@
   color: #f16522;
 }
 
+/* Description */
 .description {
   max-width: 800px;
   margin: 0 auto 40px;
@@ -25,10 +33,11 @@
   line-height: 1.6;
 }
 
+/* Class Grid Responsive */
 .class-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
   justify-items: center;
 }
 
